@@ -12,14 +12,14 @@ const sendRequest = async (url, data = null, method = null) => {
             });
             return {
                 status: response.status,
-                data: response.data
+                data: response.data,
             };
     }
     catch(error) {
         return {
-            status: error.response.status
+            status: error.response.status,
         };
-    }
+    };
 };
 
 module.exports = {
